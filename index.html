@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMP-1073G Assignment 3</title>
+    <link href="css/styles.css" rel="stylesheet">
+<script src="js/script.js" defer></script>
+</head>
+<body>
+    <h1>The Pizza Maker</h1>
+    <form id="pizzaForm" action="#" method="get">
+    <!--Name text box-->
+    <div class="name">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+
+    <!--Dropdown list to pick pizza size-->
+    <div class="size">
+        <label for="size">Pick a size:</label>
+        <select id="size" name="size">
+            <option value="small">12 inch</option>
+            <option value="medium">14 inch</option>
+            <option value="large">16 inch</option>
+        </select>
+    </div>
+    <!--Dropdown list to pick cheese amount-->
+    <div class="cheese">
+        <label for="cheese">Pick cheese amount:</label>
+        <select id="cheese" name="cheese">
+            <option value="regular cheese">regular cheese</option>
+            <option value="no cheese">no cheese</option>
+            <option value="extra cheese">extra cheese</option>
+        </select>
+    </div>
+    <!--Crust Type-->
+    <div>
+        <p>Pick crust type:</p>
+        <label><input type="radio" name="crustType" value="Thin" required>Thin</label>
+        <label><input type="radio" name="crustType" value="Normal">Normal</label>
+        <label><input type="radio" name="crustType" value="Thick">Thick</label>
+    </div>
+    <!--Toppings for pizza-->
+    <div class="toppings">
+        <p>Choose Toppings:</p>
+        <label><input type="checkbox" name="pepperoni">Pepperoni</label>
+        <label><input type="checkbox" name="sausage">Sausage</label>
+        <label><input type="checkbox" name="bacon">Bacon</label>
+        <label><input type="checkbox" name="ham">Ham</label>
+        <label><input type="checkbox" name="pineapple">Pineapple</label>
+        <label><input type="checkbox" name="olives">Olives</label>
+    </div>
+    <!--Order button to submit form-->
+    <input type="button" id="order" value="Order">
+    <input type="button" id="displayStudentInfo" value="Student Info">
+    </form>
+    <p id="studentInfo"></p>
+    <p id="output"></p>
+</body>
+</html>
